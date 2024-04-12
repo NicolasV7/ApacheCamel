@@ -81,6 +81,9 @@ public class GetStepApiController implements GetStepApi {
         JsonApiBodyResponseSuccess responseSuccess = new JsonApiBodyResponseSuccess();
         responseSuccess.addDataItem(responseEnigma);
         
-        return List.of(responseSuccess);
+        List<JsonApiBodyResponseSuccess> responseSuccessList = new ArrayList<JsonApiBodyResponseSuccess>();  
+        responseSuccessList.add(responseSuccess);
+        
+        return responseSuccessList;
     }
 }
