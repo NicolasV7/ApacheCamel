@@ -38,7 +38,7 @@ public class GetStepApiController implements GetStepApi {
     }
 
     public ResponseEntity<?> getStep(@ApiParam(value = "request body get enigma step", required = true) @Valid @RequestBody JsonApiBodyRequest body) {
-        if (!body.getData().get(0).getStep().equalsIgnoreCase("1")) {        	
+        if (!body.getData().get(0).getStep().equalsIgnoreCase("3")) {        	
         	return new ResponseEntity<>(createResponseErrors(body), HttpStatus.BAD_REQUEST);
         }
         
