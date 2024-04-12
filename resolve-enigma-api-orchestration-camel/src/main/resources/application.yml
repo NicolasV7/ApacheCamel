@@ -1,0 +1,3 @@
+server:
+  contextPath: /v1/getOneEnigma
+  port: 8080
